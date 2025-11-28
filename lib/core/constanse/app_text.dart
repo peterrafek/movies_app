@@ -1,4 +1,27 @@
 abstract final class AppText {
+
+  // Onboarding
+  static const String next = "next";
+  static const String back = "back";
+  static const String finish = "finish";
+  static const String exploreNow = "exploreNow";
+  static const String onboardingTitle1 = "onboardingTitle1";
+  static const String onboardingTitle2 = "onboardingTitle2";
+  static const String onboardingTitle3 = "onboardingTitle3";
+  static const String onboardingTitle4 = "onboardingTitle4";
+  static const String onboardingTitle5 = "onboardingTitle5";
+  static const String onboardingTitle6 = "onboardingTitle6";
+
+  static const String onboardingSubTitle1 = "onboardingSubTitle1";
+  static const String onboardingSubTitle2 = "onboardingSubTitle2";
+  static const String onboardingSubTitle3 = "onboardingSubTitle3";
+  static const String onboardingSubTitle4 = "onboardingSubTitle4";
+  static const String onboardingSubTitle5 = "onboardingSubTitle5";
+
+
+
+
+
   // Login
   static const String loggingInMessage = "loggingInMessage";
 

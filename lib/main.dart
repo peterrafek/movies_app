@@ -24,7 +24,6 @@ void main() async{
   ]);
   Bloc.observer = MyBlocObserver();
   await configureDependencies();
-
   runApp(
     BlocProvider<GlobalCubit>(
       create: (context) =>

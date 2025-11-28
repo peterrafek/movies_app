@@ -43,7 +43,9 @@ class CustomElevatedButton extends StatelessWidget {
           ? FittedBox(
         child: Text(
           buttonTitle.tr(),
-          style: titleStyle ?? Theme.of(context).textTheme.bodyMedium,
+          style: titleStyle ?? Theme.of(context).textTheme.bodyMedium?.copyWith(
+            color: Theme.of(context).colorScheme.onPrimary
+          ),
         ),
       )
           : child,

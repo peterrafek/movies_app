@@ -5,36 +5,36 @@ import 'package:movies_app/core/constanse/app_colors.dart';
 abstract final class AppTheme {
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,
-    scaffoldBackgroundColor: AppColors.black[0],
+    scaffoldBackgroundColor: AppColors.black,
     fontFamily: "Baloo Thambi 2",
     colorScheme: ColorScheme.fromSeed(
-      primary: AppColors.orange[0],
-      onPrimary: AppColors.lightOrange[0],
-      secondary: AppColors.black[10],
+      primary: AppColors.yellow[0],
+      onPrimary: AppColors.black,
+      secondary: AppColors.darkGray[40],
       onSecondary: AppColors.white,
-      shadow: AppColors.gray[0],
-      onSurface: AppColors.green,
-      error: AppColors.orange[80],
-      onSurfaceVariant: AppColors.gray[90],
-      seedColor: Colors.deepPurple,
-      outline: AppColors.gray[10],
+      shadow: AppColors.darkGray[10],
+      onSurface: AppColors.green[0],
+      error: AppColors.red[0],
+      onSurfaceVariant: AppColors.darkGray[90],
+      seedColor: AppColors.yellow,
+      outline: AppColors.darkGray[20],
       brightness: Brightness.dark,
     ),
     textTheme: TextTheme(
       displayLarge: TextStyle(
         fontSize: 44.sp,
         fontWeight: FontWeight.w800,
-        color: AppColors.orange[0],
+        color: AppColors.yellow[0],
       ),
       displayMedium: TextStyle(
         fontSize: 33.sp,
         fontWeight: FontWeight.w800,
-        color: AppColors.gray[0],
+        color: AppColors.white,
       ),
       displaySmall: TextStyle(
         fontSize: 25.sp,
         fontWeight: FontWeight.w800,
-        color: AppColors.gray[0],
+        color: AppColors.white,
       ),
       headlineLarge: TextStyle(
         fontSize: 24.sp,
@@ -54,29 +54,37 @@ abstract final class AppTheme {
       bodyLarge: TextStyle(
         fontSize: 16.sp,
         fontWeight: FontWeight.w400,
-        color: AppColors.gray[0],
+        color: AppColors.darkGray[10],
       ),
       bodyMedium: TextStyle(
         fontSize: 14.sp,
-        fontWeight: FontWeight.w800,
+        fontWeight: FontWeight.w600,
         color: AppColors.white,
       ),
       labelLarge: TextStyle(
         fontSize: 12.sp,
         fontWeight: FontWeight.w400,
-        color: AppColors.gray[0],
+        color: AppColors.darkGray[20],
       ),
     ),
     textSelectionTheme: TextSelectionThemeData(
-      cursorColor: AppColors.lightOrange[0],
-      selectionHandleColor: AppColors.lightOrange[0],
-      selectionColor: AppColors.lightOrange[0]?.withValues(alpha: 0.2),
+      cursorColor: AppColors.yellow[0],
+      selectionHandleColor: AppColors.yellow[0],
+      selectionColor: AppColors.yellow[0]?.withValues(alpha: 0.2),
     ),
-
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
-        disabledBackgroundColor: AppColors.gray[0],
-        disabledForegroundColor: AppColors.white,
+        backgroundColor: AppColors.yellow[0],
+        foregroundColor: AppColors.black,
+        disabledBackgroundColor: AppColors.darkGray[20],
+        disabledForegroundColor: AppColors.white ,
+        textStyle: TextStyle(
+          fontSize: 16.sp,
+          fontWeight: FontWeight.w700,
+        ),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(10.r),
+        ),
       ),
     ),
   );

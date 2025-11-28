@@ -1,5 +1,6 @@
 
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:injectable/injectable.dart';
 import 'package:movies_app/core/cache/shared_preferences_helper.dart';
 import 'package:movies_app/core/constanse/const_keys.dart';
@@ -58,7 +59,7 @@ class GlobalCubit extends Cubit<GlobalState> {
     } else {
       emit(state.copyWith(redirectedScreen: RouteNames.onboarding));
     }
-    // FlutterNativeSplash.remove(); uncomment this line to remove splash screen after setting redirected screen
+    FlutterNativeSplash.remove();
   }
 
   Future<void> _changedLanguageIndex({
